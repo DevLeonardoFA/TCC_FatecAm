@@ -2,17 +2,17 @@
 session_start();
 include('backend/connection.php');
 
-if (empty($_POST['login']) || empty($_POST['senha'])) {
+/*if (empty($_POST['login']) || empty($_POST['senha'])) {
 	header('Location: loginfront.php');
 	exit();
-}
+}*/
 
 //passando o que está nos campos userField e passField
 $uName = mysqli_real_escape_string($connection, $_POST['login']);
 $uPass = mysqli_real_escape_string($connection, $_POST['senha']);
 
 //query para verificação
-$query = "select * from jogador, usuario, olheiro where email = '$uName' and senha = '$uPass'";
+$query = "select * from jogador where email = '$uName' and senha = '$uPass'";
 
 //verificação
 $result = mysqli_query($connection, $query);
