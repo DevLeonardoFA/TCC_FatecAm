@@ -1,8 +1,6 @@
-<?php session_start(); ?>
-
 <div id="mySidenav" class="sidenav">
   <div class="userphoto">
-    <img src="" alt="PIU">
+    <img src="./images/user-defaut.png" alt="PIU" style="width: 100%">
     <span class="username"><?php echo $_SESSION['nome']; ?></span>
   </div>
   
@@ -10,7 +8,7 @@
   <a href="#">Sobre Você</a>
   <a href="#">Videos</a>
 
-  <a href="index.php" class="deslogar">Logout</a>
+  <a href="backend/logout.php" class="deslogar">Logout</a>
 </div>
 
 <div id="main">

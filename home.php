@@ -1,9 +1,10 @@
 <?php 
+include('backend/verificacao.php');
 
 include('includes/header.php'); 
 include('includes/sidebar.php');
-
 ?>
+
 
 
 <?php include('includes/footer.php'); ?>

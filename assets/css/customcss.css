@@ -96,9 +96,17 @@
     /*formulario de login*/
     
     .login_form {
+        width: 300px;
         position: absolute;
         top: 130px;
         right: 170px;
+    }
+    
+    .login_form>input {
+        width: 100%;
+        margin-bottom: 20px;
+        border: 0;
+        border-bottom: 1px solid black;
     }
     
     .background-login {
@@ -159,12 +167,13 @@
     
     .userphoto {
         width: 150px;
-        height: 150px;
-        background-color: aqua;
+        height: 140px;
+        background-color: #fff;
         margin-left: calc(50% - 75px);
         margin-top: 20px;
         margin-bottom: 50px;
         position: relative;
+        border-radius: 15px;
     }
     
     .deslogar {
