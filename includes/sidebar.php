@@ -1,3 +1,4 @@
+<!--codigo do sidebar-->
 <div id="mySidenav" class="sidenav">
   <div class="userphoto">
     <img src="./images/user-defaut.png" alt="PIU" style="width: 100%">
@@ -5,7 +6,8 @@
   </div>
   
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Sobre Você</a>
+  <a href="home.php">Home</a>
+  <a href="about.php">Sobre Você</a>
   <a href="#">Videos</a>
 
   <a href="backend/logout.php" class="deslogar">Logout</a>

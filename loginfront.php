@@ -1,10 +1,12 @@
-<?php include('includes/header.php') ?>
-<?php include('includes/navbar.php') ?>
-
+<?php 
+	//conteúdo da pagina de login
+	include('includes/header.php');
+	include('includes/navbar.php');
+?>
+<!--background e formulário-->
 <div class="background-login">
 	<div class="box">
 		<div class="imageslogin"></div>
-		
 		
 		<form action="login.php" method="POST" class="login_form">
 			<div>

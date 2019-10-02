@@ -1,4 +1,4 @@
-    /* Banner Img*/
+    /*inicio index.php*/
     
     .niceimage {
         background-image: url(../../images/banner.jpg);
@@ -7,18 +7,19 @@
         height: 450px;
         background-repeat: no-repeat;
     }
-    /*navbar pegar todo o espaço*/
+    /* Banner Img*/
     
     .navbar {
         width: 100%;
         background-color: transparent !important;
     }
-    /* deixa os componentes do navbar na direita */
+    /*navbar pegar todo o espaço*/
     
     #navbarSupportedContent {
         position: absolute;
         right: 0;
     }
+    /* deixa os componentes do navbar na direita */
     
     .fullwidth {
         width: 100%;
@@ -29,7 +30,7 @@
         align-items: center;
         flex-direction: row;
     }
-    /*nav fixo no top*/
+    /* area com fundo verde */
     
     .fixed-top {
         background: #fff;
@@ -37,12 +38,14 @@
         max-width: 100%;
         padding: 0 65px;
     }
+    /*nav fixo no top*/
     
     .map-area {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
+    /*deixa a parte escrita centralizada*/
     
     .map-phrase .phrase {
         color: #0a1166;
@@ -85,7 +88,8 @@
         background-size: contain;
         right: 180px;
     }
-    /*deixa o formulario de login na direita*/
+    /*fim index.php*/
+    /*inicio loginfront.php*/
     
     .box {
         align-items: end;
@@ -93,7 +97,7 @@
         flex-direction: column;
         position: relative;
     }
-    /*formulario de login*/
+    /*deixa o formulario de login na direita*/
     
     .login_form {
         width: 300px;
@@ -101,6 +105,7 @@
         top: 130px;
         right: 170px;
     }
+    /*formulario de login*/
     
     .login_form>input {
         width: 100%;
@@ -187,4 +192,24 @@
         color: #fff;
         width: 100%;
         right: calc(50% - 90px);
+    }
+    /*about page*/
+    
+    .about_photo {
+        width: 100%;
+    }
+    
+    .about_username {
+        color: #000;
+    }
+    
+    .form_about input,
+    select,
+    button {
+        width: 40%;
+        margin: 10px;
+    }
+    
+    .form_about select {
+        padding: 3px
     }

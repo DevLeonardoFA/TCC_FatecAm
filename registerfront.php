@@ -1,11 +1,10 @@
 <?php
-
-include('includes/header.php');
-include('includes/navbar.php');
+    //conteúdo da pagina de registro
+    include('includes/header.php');
+    include('includes/navbar.php');
 ?>
 
-<br><br><br><br><br>
-
+<!--formulario de registro-->
 <form action="register.php" method="POST" class="login_form">
     <div>
         <input type="radio" name="posicao" value="usuario" id="usuario"> <label for="usuario">Usuário</label>
@@ -20,5 +19,5 @@ include('includes/navbar.php');
 </form>
 
 <?php
-include('includes/footer.php');
+    include('includes/footer.php');
 ?>

@@ -1,9 +1,14 @@
+<?php 
 
-<?php include("includes/header.php"); ?>
-<?= include("includes/navbar.php")?>
+	//conteúdo da tela de inicio onde é explicado a site
 
+	include("includes/header.php"); 
+	include("includes/navbar.php")
+?>
+<!--banner-->
 <div class="niceimage"></div>
 
+<!--Frase 1-->
 <div class="fullwidth">
 	<div class="container">
 		<div class="text-center">
@@ -13,6 +18,8 @@
 		</div>
 	</div>
 </div>
+
+<!--mapa-->
 <div class="container">
 	<div class="row map-area">
 		<div class="col-6 map-phrase">
@@ -27,6 +34,6 @@
 		</div>
 	</div>
 </div>
-<div style="height: 500px;">
-</div>
+
+
 <?php include("includes/footer.php") ?>

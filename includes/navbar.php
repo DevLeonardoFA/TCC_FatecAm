@@ -1,3 +1,5 @@
+<!--codigo do navbar-->
+
 <div class="container fixed-top">
 	<div class="row">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">

@@ -1,8 +1,10 @@
 <?php 
-include('backend/verificacao.php');
 
-include('includes/header.php'); 
-include('includes/sidebar.php');
+    //conteúdo da página home
+
+    include('backend/verificacao.php');
+    include('includes/header.php'); 
+    include('includes/sidebar.php');
 ?>
 
 
