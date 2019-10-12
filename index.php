@@ -1,7 +1,5 @@
 <?php 
-
 	//conteúdo da tela de inicio onde é explicado a site
-
 	include("includes/header.php"); 
 	include("includes/navbar.php")
 ?>

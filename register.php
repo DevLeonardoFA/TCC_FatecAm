@@ -9,23 +9,19 @@ if (empty($_POST['nome']) || empty($_POST['senha']) || empty($_POST['rsenha']) |
     //se sim manda de volta para página de cadastro
     header('Location: registerfront.php');
 }
-else{
-    msgfmt_get_error_message('Alguns dos campos estão vazios!');
-    exit;
-}
 //verifica se uma das posições foi selecionada
-if (isset($_POST['posicao'])) {
+if (isset($_POST['categoria'])) {
     //passa a posição selecionada e os outros dados
-    $posicao = ( isset($_POST['posicao']) )  ? $_POST['posicao']  : null;
+    $categoria = ( isset($_POST['categoria']) )  ? $_POST['categoria']  : null;
     $nome = mysqli_real_escape_string($connection, $_POST['nome']);
     $senha = mysqli_real_escape_string($connection, $_POST['senha']);
     $rsenha = mysqli_real_escape_string($connection, $_POST['rsenha']);
     $email = mysqli_real_escape_string($connection, $_POST['email']);
 
     //verifica qual foi a posição selecionada
-    if ($posicao == "usuario") {
+    if ($categoria == "usuario") {
         $categoria = 0;
-    }else if($posicao == "jogador"){
+    }else if($categoria == "jogador"){
         $categoria = 1;
     }else{
         $categoria = 2;
@@ -34,7 +30,7 @@ if (isset($_POST['posicao'])) {
     //verifica se as senhas combinam
     if($senha == $rsenha){
         //cadastro dos dados
-        $query = "insert into `$posicao`(`nome`, `email`, `senha`, `categoria`) values('$nome','$email','$senha','$categoria')";
+        $query = "insert into usuario (`nome`, `email`, `senha`, `categoria`) values('$nome','$email','$senha','$categoria')";
         $result = mysqli_query($connection, $query);
         //manda para página de login
         header('Location: loginfront.php');

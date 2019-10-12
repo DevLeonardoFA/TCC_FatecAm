@@ -1,215 +1,272 @@
-    /*inicio index.php*/
-    
-    .niceimage {
-        background-image: url(../../images/banner.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 450px;
-        background-repeat: no-repeat;
-    }
-    /* Banner Img*/
-    
-    .navbar {
-        width: 100%;
-        background-color: transparent !important;
-    }
-    /*navbar pegar todo o espaço*/
-    
-    #navbarSupportedContent {
-        position: absolute;
-        right: 0;
-    }
-    /* deixa os componentes do navbar na direita */
-    
-    .fullwidth {
-        width: 100%;
-        background-color: #a9b976;
-        color: #000;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-    }
-    /* area com fundo verde */
-    
-    .fixed-top {
-        background: #fff;
-        width: 100%;
-        max-width: 100%;
-        padding: 0 65px;
-    }
-    /*nav fixo no top*/
-    
-    .map-area {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    /*deixa a parte escrita centralizada*/
-    
-    .map-phrase .phrase {
-        color: #0a1166;
-        font-weight: 800;
-        font-size: 60px;
-        margin-left: 90px;
-    }
-    
-    .map img {
-        padding: 20px 0 10px 0;
-        animation: map;
-    }
-    
-    .map {
-        position: relative;
-    }
-    
-    .map::after {
-        content: "";
-        background-image: url(../../images/point.png);
-        position: absolute;
-        top: 245px;
-        width: 55px;
-        height: 55px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        right: 260px;
-    }
-    
-    .map::before {
-        content: "";
-        background-image: url(../../images/point.png);
-        position: absolute;
-        top: 140px;
-        width: 55px;
-        height: 55px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        right: 180px;
-    }
-    /*fim index.php*/
-    /*inicio loginfront.php*/
-    
-    .box {
-        align-items: end;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-    /*deixa o formulario de login na direita*/
-    
-    .login_form {
-        width: 300px;
-        position: absolute;
-        top: 130px;
-        right: 170px;
-    }
-    /*formulario de login*/
-    
-    .login_form>input {
-        width: 100%;
-        margin-bottom: 20px;
-        border: 0;
-        border-bottom: 1px solid black;
-    }
-    
-    .background-login {
-        background-color: #aaa;
-        width: 100%;
-        height: 100vh;
-    }
-    /* side bar*/
-    
+/*inicio index.php*/
+
+.niceimage {
+    background-image: url(../../images/banner.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+}
+
+
+/* Banner Img*/
+
+.navbar {
+    width: 100%;
+    background-color: transparent !important;
+}
+
+
+/*navbar pegar todo o espaço*/
+
+#navbarSupportedContent {
+    position: absolute;
+    right: 0;
+}
+
+
+/* deixa os componentes do navbar na direita */
+
+.fullwidth {
+    width: 100%;
+    background-color: #a9b976;
+    color: #000;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+/* area com fundo verde */
+
+.fixed-top {
+    background: #fff;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 65px;
+}
+
+
+/*nav fixo no top*/
+
+.map-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/*deixa a parte escrita centralizada*/
+
+.map-phrase .phrase {
+    color: #0a1166;
+    font-weight: 800;
+    font-size: 60px;
+    margin-left: 90px;
+}
+
+.map img {
+    padding: 20px 0 10px 0;
+    animation: map;
+}
+
+.map {
+    position: relative;
+}
+
+.map::after {
+    content: "";
+    background-image: url(../../images/point.png);
+    position: absolute;
+    top: 245px;
+    width: 55px;
+    height: 55px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 260px;
+}
+
+.map::before {
+    content: "";
+    background-image: url(../../images/point.png);
+    position: absolute;
+    top: 140px;
+    width: 55px;
+    height: 55px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 180px;
+}
+
+
+/*fim index.php*/
+
+
+/*inicio loginfront.php*/
+
+.box {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+/*deixa o formulario de login na direita*/
+
+.login_form {
+    width: 300px;
+    position: absolute;
+    top: 130px;
+    right: 170px;
+}
+
+
+/*formulario de login*/
+
+.login_form>input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+.background-login {
+    background-color: #aaa;
+    width: 100%;
+    height: 100vh;
+}
+
+.login_form button {
+    width: 49%;
+    margin: 0;
+}
+
+
+/* side bar*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
     .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
+        padding-top: 15px;
     }
-    
     .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
+        font-size: 18px;
     }
-    
-    .sidenav a:hover {
-        color: #f1f1f1;
-    }
-    
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-    
-    #main {
-        transition: margin-left .5s;
-        padding: 16px;
-    }
-    
-    @media screen and (max-height: 450px) {
-        .sidenav {
-            padding-top: 15px;
-        }
-        .sidenav a {
-            font-size: 18px;
-        }
-    }
-    /* userphoto area */
-    
-    .userphoto {
-        width: 150px;
-        height: 140px;
-        background-color: #fff;
-        margin-left: calc(50% - 75px);
-        margin-top: 20px;
-        margin-bottom: 50px;
-        position: relative;
-        border-radius: 15px;
-    }
-    
-    .deslogar {
-        position: absolute;
-        bottom: 20px;
-    }
-    
-    .username {
-        position: absolute;
-        bottom: -30px;
-        color: #fff;
-        width: 100%;
-        right: calc(50% - 90px);
-    }
-    /*about page*/
-    
-    .about_photo {
-        width: 100%;
-    }
-    
-    .about_username {
-        color: #000;
-    }
-    
-    .form_about input,
-    select,
-    button {
-        width: 40%;
-        margin: 10px;
-    }
-    
-    .form_about select {
-        padding: 3px
-    }
+}
+
+
+/* userphoto area */
+
+.userphoto {
+    width: 150px;
+    height: 140px;
+    background-color: #fff;
+    margin-left: calc(50% - 90px);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.deslogar {
+    position: absolute;
+    bottom: 20px;
+}
+
+.username {
+    position: absolute;
+    bottom: -30px;
+    color: #fff;
+    width: 80%;
+    right: calc(50% - 45px);
+    font-weight: 700;
+}
+
+button.conf {
+    position: absolute;
+    bottom: -40px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    background-image: url(../../images/settings.png);
+    background-position: center;
+    border: transparent;
+    background-size: cover;
+}
+
+
+/*about page*/
+
+.about_photo {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.about_username {
+    color: #000;
+}
+
+.form_about input,
+select,
+button {
+    width: 45%;
+    margin: 10px;
+}
+
+.form_about select {
+    padding: 3px
+}
+
+
+/*video*/
+
+.procurar {
+    height: calc(100vh - 77px);
+    background: aquamarine;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
