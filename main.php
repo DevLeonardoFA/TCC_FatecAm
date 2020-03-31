@@ -4,4 +4,4 @@
 include('backend/login_verify.php');
 ?>
 
-<h1><?= $_SESSION['userField']; ?></h1>
+<h1><?php $_SESSION['userField']; ?></h1>

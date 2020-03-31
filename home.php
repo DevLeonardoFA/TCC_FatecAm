@@ -59,7 +59,7 @@
                         <div class="col-3">
                             <div class="area_video">
                                 <div class="video">
-                                    <embed src="<?= $_SESSION['video']; ?>" type="">
+                                    <?php echo $_SESSION['video'];?>
                                 </div>
                                 <div class="jogador_info">
                                 <h4><?= $resultado['nome']; ?></h4>
