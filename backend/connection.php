@@ -1,12 +1,9 @@
 <?php
-//host
-define('HOST', 'localhost');
-//usuario do DB
-define('USUARIO', 'root');
-//senha do DB
-define('SENHA', '');
-//DB
-define('DB', 'tcc_fa');
 
-//fazendo a conexão, passando os dados e caso de erro uma mensagem
-$connection = mysqli_connect(HOST, USUARIO, SENHA, DB) or die('erro ao conectar');
+//Conecção com o banco de dados
+$host = "localhost";
+$user = "root";
+$senha_conexao = "";
+$database = "banco_futebol";
+
+$conexao = mysqli_connect($host,$user,$senha_conexao,$database);

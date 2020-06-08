@@ -10,20 +10,6 @@
     //definindo numero de itens visiveis na tela
     $itens_por_pagina = 1;
 
-    //pega pagina atual
-    $pagina = intval($_GET['pagina']);
-
-    //puxa resultados do banco
-    $sql_code = "select nome from usuario where categoria = 1 LIMIT $pagina,$itens_por_pagina";
-    $execute = $connection->query($sql_code) or die($connection->error);
-    $resultado = $execute->fetch_assoc();
-    $num = $execute->num_rows;
-
-    //quantidade total de itens no banco
-    $num_total = $connection->query("select nome from usuario where categoria = 1")->num_rows;
-
-    //definir numero de paginas
-    $num_paginas = $num_total/$itens_por_pagina;
 ?>  
 
     <div class="container-fluid">

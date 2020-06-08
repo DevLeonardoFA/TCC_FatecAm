@@ -105,6 +105,31 @@
 /*fim index.php*/
 
 
+/* form Cadastro */
+.modal .modal-body{
+    padding: 30px 30px;
+}
+.modal .modal-body button{
+    margin: 20px 0px 0px 0px;
+
+}
+.modal .modal-header{
+
+}
+.modal .modal-header button{
+    text-align: right;
+    color: red;
+}
+.form-cadastro input{
+    margin: 5px 0px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #80808096;
+    font-size: 14px;
+    font-weight: 200;
+}
+
 /*inicio loginfront.php*/
 
 .box {
