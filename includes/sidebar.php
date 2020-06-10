@@ -1,18 +1,22 @@
 <!--codigo do sidebar-->
 <div id="mySidenav" class="sidenav">
   <div class="userphoto">
-    <img src="./images/user-defaut.png" alt="PIU" style="width: 100%">
+
+    <?php if($_SESSION['usuario']['img_perfil'] != ''){
+      echo '<img src="'.$_SESSION['usuario']['img_perfil'].'" alt="PIU" style="width: 100%">';
+    }else{
+      echo '<img src="./images/user-defaut.png" alt="PIU" style="width: 100%">';
+    }?>
+
+    
     <span class="username"><?php echo $_SESSION['nome']; ?></span>
     <button class="conf" data-toggle="modal" data-target="#modalExemplo"></button>
   </div>
   
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="home.php?pagina=0">Videos</a>
-  <?php 
-  if ($_SESSION['categoria'] == 1) {
-    echo'<a href="about.php">Atleta</a>';
-  }
-  
+  <a href="dados.php">inicio</a>
+  <a href="dados.php">Configurações</a>
+  <a href="dados.php">Fale conosco</a>
   ?>
   
 

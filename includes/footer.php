@@ -53,7 +53,6 @@
 				<input type="email" name="email" id="" placeholder="Email">
 				<input type="password" name="senha" placeholder="Senha">
 				<input type="password" name="rsenha" placeholder="Confirmação de Senha">
-
 				<button class="btn btn-primary" type="submit">Enviar</button>
 			</form>
 		</div>

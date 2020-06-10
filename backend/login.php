@@ -2,7 +2,7 @@
 //inicia sessão
 session_start();
 //chama a pagina de conexão
-include('backend/connection.php');
+include('connection.php');
 
 //verifica se campo login e senha estão preenchidos
 if (empty($_GET['login']) || empty($_GET['senha'])) {
@@ -40,11 +40,12 @@ $row = mysqli_num_rows($result);
 //se row for igual a 1 ele manda para página principal com login feito
 if ($row == 1) {
 
+		$data = implode("/",array_reverse(explode("-",$dados['data_nascimento'])));
 		$_SESSION['usuario'] = array(
 			'cod_jogador' => $dados['cod_jogador'],
 			'CPF' => $dados['CPF'],
 			'nome_completo' =>	$dados['nome_completo'],
-			'data_nascimento' =>  $dados['data_nascimento'],
+			'data_nascimento' =>  $data,
 			'altura' =>  $dados['altura'],
 			'cidade' =>  $dados['cidade'],
 			'posicao' =>  $dados['posicao'],
@@ -58,7 +59,7 @@ if ($row == 1) {
 			'img_perfil' => $dados['foto_perfil']
 		);
 
-		//header('Location: home.php?pagina=0');
+		header('Location: ../home.php?pagina=0');
 		exit();
 }else{
 }
