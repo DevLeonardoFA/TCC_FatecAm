@@ -5,14 +5,14 @@ session_start();
 include('connection.php');
 
 //verifica se campo login e senha estão preenchidos
-if (empty($_GET['login']) || empty($_GET['senha'])) {
-	//se estiverem vazios voltar para página de login
-	header('Location: loginfront.php');
-	exit();
-}
+// if (empty($_GET['email']) || empty($_GET['senha'])) {
+// 	//se estiverem vazios voltar para página de login
+// 	header('Location: ../');
+// 	exit();
+// }
 
 //passando o que está nos campos login e senha para as variáveis
-$uName = $_GET['login'];
+$uName = $_GET['email'];
 $uPass = $_GET['senha'];
 
 //query para verificação
@@ -21,17 +21,8 @@ $query = "select * from jogadores where email = '{$uName}' and senha = '{$uPass}
 //verificação
 $result = mysqli_query($conexao, $query);
 
-
 //executa a conexão e a query
 $dados = mysqli_fetch_assoc($result);
-?>
-
-<pre>
-<?php print_r($dados); ?>
-</pre>
-
-
-<?php
 
 //verifica se o resultado retornou 0/1
 $row = mysqli_num_rows($result);

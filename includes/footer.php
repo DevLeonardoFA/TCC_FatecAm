@@ -10,10 +10,10 @@
         </button>
       </div>
       <div class="modal-body">
-		<form class="px-4 py-3" method="get" action="login.php">
+		<form class="px-4 py-3" method="GET" action="./backend/login.php">
 			<div class="form-group">
 			<label for="exampleDropdownFormEmail1">Endereço de email</label>
-			<input type="email" name="login" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+			<input type="email" name="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
 			</div>
 			<div class="form-group">
 			<label for="exampleDropdownFormPassword1">Senha</label>
@@ -41,7 +41,7 @@
       </div>
       <div class="modal-body">
 		<div>
-			<form action="register.php" method="GET">
+			<form action="./backend/cadastro.php" method="GET">
 				<input type="text" name="nome_completo" id="" placeholder="Nome Completo">
 				<input type="text" name="CPF" id="" placeholder="CPF">
 
