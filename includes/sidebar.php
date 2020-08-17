@@ -9,14 +9,15 @@
     }?>
 
     
-    <span class="username"><?php echo $_SESSION['nome']; ?></span>
+    <span class="username"><?php echo $_SESSION['usuario']['nome_completo']; ?></span>
+
     <button class="conf" data-toggle="modal" data-target="#modalExemplo"></button>
   </div>
   
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="dados.php">inicio</a>
-  <a href="dados.php">Configurações</a>
-  <a href="dados.php">Fale conosco</a>
+  <a href="home.php">inicio</a>
+  <a href="usuario.php">Configurações</a>
+  <a href="contact-us.php">Fale conosco</a>
   ?>
   
 

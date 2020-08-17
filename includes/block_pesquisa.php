@@ -13,7 +13,7 @@
                 <option value="">Cidade</option>
             </select>
         </div>
-        <input type="text" name="idade" placeholder="Idade">
+        <input type="text" name="ano_nascimento" placeholder="Ano de Nascimento">
         <input type="text" name="posicao" placeholder="Posição">
         <button type="submit">Procurar</button>
     </form>

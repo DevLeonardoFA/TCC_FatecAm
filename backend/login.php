@@ -12,11 +12,11 @@ include('connection.php');
 // }
 
 //passando o que está nos campos login e senha para as variáveis
-$uName = $_GET['email'];
+$uEmail = $_GET['email'];
 $uPass = $_GET['senha'];
 
 //query para verificação
-$query = "select * from jogadores where email = '{$uName}' and senha = '{$uPass}'";
+$query = "select * from jogadores where email = '{$uEmail}' and senha = '{$uPass}'";
 
 //verificação
 $result = mysqli_query($conexao, $query);
@@ -32,6 +32,7 @@ $row = mysqli_num_rows($result);
 if ($row == 1) {
 
 		$data = implode("/",array_reverse(explode("-",$dados['data_nascimento'])));
+		
 		$_SESSION['usuario'] = array(
 			'cod_jogador' => $dados['cod_jogador'],
 			'CPF' => $dados['CPF'],
@@ -53,5 +54,7 @@ if ($row == 1) {
 		header('Location: ../home.php?pagina=0');
 		exit();
 }else{
+
+	echo "Não consegui entrar";
 }
 //se row for difernete... volta para pagina de login
