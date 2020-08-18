@@ -18,9 +18,9 @@ $uPass = $_GET['senha'];
 //query para verificação
 $query = "select * from jogadores where email = '{$uName}' and senha = '{$uPass}'";
 
+
 //verificação
 $result = mysqli_query($conexao, $query);
-
 
 //executa a conexão e a query
 $dados = mysqli_fetch_assoc($result);
@@ -36,7 +36,7 @@ $dados = mysqli_fetch_assoc($result);
 //verifica se o resultado retornou 0/1
 $row = mysqli_num_rows($result);
 
-
+echo $row;
 //se row for igual a 1 ele manda para página principal com login feito
 if ($row == 1) {
 
@@ -57,8 +57,8 @@ if ($row == 1) {
 			'email' =>  $dados['email'],
 			'img_perfil' => $dados['foto_perfil']
 		);
-
-		//header('Location: home.php?pagina=0');
+		$_SESSION['logado'] = 'on';
+		header('Location: home.php?pagina=0');
 		exit();
 }else{
 }

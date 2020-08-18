@@ -2,7 +2,7 @@
 
     //conteúdo da página home
     include('backend/connection.php');
-    include('backend/verificacao_logado.php');
+    // include('backend/verificacao_logado.php');   
     include('includes/header.php'); 
     include('includes/sidebar.php');
 
@@ -18,8 +18,8 @@
                 <div class="procurar">
                     <h1>Buscar Atleta</h1>
                     <form action="pesquisar.php" method="POST" class="form_pesquisar">
-                        <input type="text" name="nome" placeholder="Nome">
-                        <div>
+                        <input id="nome_search" type="text" name="nome" placeholder="Nome">
+                        <!-- <div>
                             <select name="uf" id="uf" disabled data-target="#cidade">
                                 <option value="">Estados</option>
                             </select>
@@ -29,15 +29,17 @@
                             <select name="cidade" id="cidade" disabled>
                                 <option value="">Cidade</option>
                             </select>
-                        </div>
+                        </div> -->
                         <input type="text" name="idade" placeholder="Idade">
                         <input type="text" name="posicao" placeholder="Posição">
                         <button type="submit">Procurar</button>
                     </form>
                 </div>
             </div>
+
+
             <div class="col-10">
-                <?php if ($num > 0) {?>
+                <?php if ($num > 0) { ?>
 
                 <div class="row">
 
@@ -54,6 +56,7 @@
                             </div>
                         </div>
                     <?php } while($resultado = $execute->fetch_assoc()); ?>
+                    
                 </div>        
 
                 <nav aria-label="Page navigation example">

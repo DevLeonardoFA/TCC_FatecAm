@@ -90,3 +90,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 }, false);
+
+jQuery(document).ready(function($){
+
+    $('.procurar form button').click(function(){
+        event.preventDefault();
+        var nome = $('#nome_search').text;
+        var valores = Array(nome, estado, cidade, idade, posicao);
+
+        alert(valores);
+        $.ajax({
+            type: GET,
+            url: pesquisar.php,
+            data: valores,
+            success: function(data){
+
+            }
+        });
+    });
+
+});
