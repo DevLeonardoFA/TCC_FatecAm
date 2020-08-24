@@ -4,34 +4,53 @@
 	include("includes/navbar.php")
 ?>
 <!--banner-->
-<div class="niceimage"></div>
-
-<!--Frase 1-->
-<div class="fullwidth">
-	<div class="container">
-		<div class="text-center">
-			<p>
-				Encontre jogadores! veja suas melhores jogadas! avalie-os e contate-os!
-			</p>
-		</div>
+<div class="banner-main">
+	<div class="mascara"></div>
+	<div class="container"> 
+		<h2> Encontre e avalie e divulgue jogadores amadores da sua região!! </h2>
+		<a href="#saiba-mais" target="saiba-mais"> Saiba Mais </a>
 	</div>
 </div>
+
+<section class="about-project background-videos" id="saiba-mais"> 
+	
+	<div class="container">
+		<h2> Vídeos em Destaque</h2>
+
+		<div class="block-videos">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</div>
+
+</section>
 
 <!--mapa-->
-<div class="container">
-	<div class="row map-area">
-		<div class="col-6 map-phrase">
-			<div class="phrase">
-				Busque por regiões!
+<section class="about-project" id="saiba-mais"> 
+
+	<div class="container">
+		<div class="row map-area">
+			<div class="col-6">
+				<h2> Sobre Nós</h2>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+				<button class="" data-toggle="modal" data-target="#exampleModal2">CADASTRAR</button>
 			</div>
-		</div>
-		<div class="col-6">
-			<div class="map">
-				<img src="images/br-map.jpg">
+			<div class="col-6">
+				<div class="map">
+					<img src="images/br-map.jpg">
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+
+</section>
+
+
+
 
 
 <?php include("includes/footer.php") ?>

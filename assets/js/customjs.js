@@ -30,6 +30,14 @@ function loadEstados(element) {
     }
 }
 
+$(document).scroll(function(){
+    if($(document).scrollTop() > 70 ){
+        $('header').addClass('charge-header');
+    }else{
+        $('header').removeClass('charge-header');
+    }
+});
+
 function putEstados(element) {
 
     var label = $(element).data('label');

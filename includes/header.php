@@ -1,6 +1,6 @@
 <?php//Header padrão html?>
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
 	<meta charset="UTF-8">
 
