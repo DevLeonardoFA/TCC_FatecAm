@@ -51,7 +51,7 @@ if ($row == 1) {
 			'img_perfil' => $dados['foto_perfil']
 		);
 
-		header('Location: ../home.php?pagina=0');
+		header('Location: ../main.php');
 		exit();
 }else{
 

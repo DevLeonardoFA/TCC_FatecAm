@@ -1,51 +1,46 @@
 <!--codigo do sidebar-->
-<div id="mySidenav" class="sidenav">
-  <div class="userphoto">
-
-    <?php if($_SESSION['usuario']['img_perfil'] != ''){
-      echo '<img src="'.$_SESSION['usuario']['img_perfil'].'" alt="PIU" style="width: 100%">';
-    }else{
-      echo '<img src="./images/user-defaut.png" alt="PIU" style="width: 100%">';
-    }?>
+  <div class="block-side">
+    <figure class="userphoto">
+        <?php if($_SESSION['usuario']['img_perfil'] != ''){
+            echo '<img src="'.$_SESSION['usuario']['img_perfil'].'" alt="PIU" style="width: 100%">';
+        }else{
+            echo '<img src="./images/user-defaut.png" alt="PIU" style="width: 100%">';
+        }?>
+    </figure>
 
     
-    <span class="username"><?php echo $_SESSION['usuario']['nome_completo']; ?></span>
+    <div class="config-link">
+      <span><img src="" alt=""></span>
+      <a href="./configuracoes.php">Configurações</a>
+    </div>
+    
+    <ul>  
+      <li> <a href="./main.php">Inicio</a></li>
+      <li> <a href="./fale-conosco.php">Fale conosco</a></li>
+      <li>
+          <div class="menu-cair"> Busca avançada </div>
+          <div class="sub-menu d-none">
+              <form action="pesquisar.php" method="POST" class="form_pesquisar">
+                  <input type="text" name="nome" placeholder="Nome">
+                  <div>
+                      <select name="uf" id="uf" disabled data-target="#cidade">
+                          <option value="">Estados</option>
+                      </select>
+                  </div>
 
-    <button class="conf" data-toggle="modal" data-target="#modalExemplo"></button>
+                  <div>
+                      <select name="cidade" id="cidade" disabled>
+                          <option value="">Cidade</option>
+                      </select>
+                  </div>
+                  <input type="text" name="ano_nascimento" placeholder="Ano de Nascimento">
+                  <input type="text" name="posicao" placeholder="Posição">
+                  <button type="submit">Procurar</button>
+              </form>
+          </div>
+      </li>
+    </ul>
   </div>
-  
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="home.php">inicio</a>
-  <a href="usuario.php">Configurações</a>
-  <a href="contact-us.php">Fale conosco</a>
-  ?>
-  
 
   <a href="backend/logout.php" class="deslogar">Logout</a>
-</div>
-
-<div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-</div>
-
- <!-- Modal -->
- <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Configurações</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body btn-group-vertical">
-            <button tipe="button" class="">Desabilitar Conta</button>
-            <button tipe="button" class="">Deletar Conta</button>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary fullwidth" data-dismiss="modal" style="height: 60px;">Fechar</button>
-          </div>
-        </div>
-      </div>
-    </div>
 

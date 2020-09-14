@@ -1,11 +1,9 @@
-
 <?php 
 
 //conteúdo da página home
 include('backend/connection.php');
 include('backend/verificacao_logado.php');
 include('includes/header.php'); 
-include('includes/sidebar.php');
 
 
 
@@ -16,13 +14,15 @@ $itens_por_pagina = 1;
 $data = implode("-",array_reverse(explode("/",$_SESSION['usuario']['data_nascimento'])));
 ?>  
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-2">
-            <?php include_once('includes/block_pesquisa.php'); ?>
+    <div class="row m-0">
+        <div class="col-2 sidebar">
+            
+            <?php include_once('includes/sidebar.php'); ?>
+
         </div>
-        <div class="col-10">
-            <main class="pagina_dados">
+        <div class="col-10 p-0">
+            <?php include_once('includes/sidetop.php'); ?>
+            <main class="pagina_dados block-main ">
                 <form action="backend/update.php" method="GET">
                     <label for="">
                     E-mail:
@@ -70,7 +70,6 @@ $data = implode("-",array_reverse(explode("/",$_SESSION['usuario']['data_nascime
 
         </div>
     </div>
-</div>
 
 
 

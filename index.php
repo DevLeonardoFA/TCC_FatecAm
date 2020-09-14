@@ -1,6 +1,6 @@
 <?php 
 	//conteúdo da tela de inicio onde é explicado a site
-	include("includes/header.php"); 
+	include("includes/header-home.php"); 
 	include("includes/navbar.php")
 ?>
 <!--banner-->
@@ -49,6 +49,8 @@
 
 </section>
 
+
+<?php include_once('./includes/modal.php');?>
 
 
 

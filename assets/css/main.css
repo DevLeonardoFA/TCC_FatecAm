@@ -1,0 +1,18 @@
+.block-main{
+    padding: 50px;
+    background: #f2f5fe;
+    height: calc(100vh - 59px);
+}
+
+.block-main .area_video{
+
+}
+
+.block-main .area_video iframe{
+    height: 150px;
+
+}
+
+.block-main .area_video .jogador_info h5{
+    font-size: 0.8rem;
+}

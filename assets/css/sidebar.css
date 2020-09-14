@@ -1,0 +1,100 @@
+/* userphoto area */
+
+.sidebar{
+    background: orange;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar .config-link{
+    margin-bottom: 50px;
+}
+.sidebar a,li{
+    color: black;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.sidebar li{
+    margin-bottom: 5px;
+}
+.sidebar ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.userphoto {
+    width: 150px;
+    height: 140px;
+    background-color: #fff;
+    margin-bottom: 0px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.deslogar {
+    position: absolute;
+    bottom: 20px;
+}
+
+.username {
+    position: absolute;
+    bottom: -30px;
+    color: #fff;
+    width: 80%;
+    right: calc(50% - 45px);
+    font-weight: 700;
+}
+
+button.conf {
+    position: absolute;
+    bottom: -40px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    background-image: url(../../images/settings.png);
+    background-position: center;
+    border: transparent;
+    background-size: cover;
+}
+
+
+/*about page*/
+
+.about_photo {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.about_username {
+    color: #000;
+}
+
+.form_about input,
+select,
+button {
+    width: 45%;
+    margin: 10px;
+}
+
+.form_about select {
+    padding: 3px
+}
+
+
+/* SideBar Top */
+.sidetop{
+    background: white;
+}
+
+.sidetop p{
+
+    margin: 0px;
+    text-align: left;
+    color: #2b0087;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 0.8rem;
+
+}
