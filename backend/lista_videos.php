@@ -38,16 +38,30 @@ if(isset($_GET['pesquisa'])){
     //verifica se o resultado retornou > 0
     $row = mysqli_num_rows($result);
 }else{
+    
+    $max_videos = "8";
 
-    $query = 'select nome_completo, data_nascimento, cidade , uf , url_video from jogadores INNER JOIN videos on jogadores.cod_jogador = videos.fk_jogador';
+    if(isset($_GET['pagina'])){
+        $page = $_GET['pagina'];
+    }else{
+        $page = 1;
+    }
 
+    $inicio_pagination = $page - 1;
+    $inicio_pagination = $inicio_pagination * $max_videos;
+
+    $query_todos = "select nome_completo, data_nascimento, cidade , uf , url_video from jogadores INNER JOIN videos on jogadores.cod_jogador = videos.fk_jogador";
+
+    $query = "select nome_completo, data_nascimento, cidade , uf , url_video from jogadores INNER JOIN videos on jogadores.cod_jogador = videos.fk_jogador LIMIT $inicio_pagination, $max_videos";
+
+    $result_todos = mysqli_query($conexao, $query_todos);
     $result = mysqli_query($conexao, $query);
 
-    
     //verifica se o resultado retornou > 0
-    $row = mysqli_num_rows($result);
-
+    if($result){
+        $row = mysqli_num_rows($result);
+    }else{
+        echo "Erro ao buscar video";
+    }
 }
-
-
 

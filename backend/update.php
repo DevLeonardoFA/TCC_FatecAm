@@ -46,6 +46,7 @@
         //header('Location: about.php');
         exit;
     }else if(isset($_GET['url_video'])){
+        
         $url_video = $_GET['url_video'];
         $query = "INSERT INTO `videos`(`url_video`, `fk_jogador`) VALUES ('{$url_video}', {$id})"; 
 

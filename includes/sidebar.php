@@ -4,7 +4,7 @@
         <?php if($_SESSION['usuario']['img_perfil'] != ''){
             echo '<img src="'.$_SESSION['usuario']['img_perfil'].'" alt="PIU" style="width: 100%">';
         }else{
-            echo '<img src="./images/user-defaut.png" alt="PIU" style="width: 100%">';
+            echo '<img src="./assets/images/user-defaut.png" alt="PIU" style="width: 100%">';
         }?>
     </figure>
 

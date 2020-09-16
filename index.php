@@ -41,7 +41,7 @@
 			</div>
 			<div class="col-6">
 				<div class="map">
-					<img src="images/br-map.jpg">
+					<img src="assets/images/br-map.jpg">
 				</div>
 			</div>
 		</div>

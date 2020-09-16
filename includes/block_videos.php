@@ -1,9 +1,8 @@
 <?php
+
 include_once('backend/lista_videos.php');
 
 ?>
-
-
     <main>
 
         <?php if ($row > 0) { ?>
@@ -34,7 +33,28 @@ include_once('backend/lista_videos.php');
                 <?php } ?>
 
             </div>       
+                    <?php 
+                            $tr = mysqli_num_rows($result_todos); // verifica o número total de registros
 
+                            $tp = $tr / $max_videos; // verifica o número total de páginas
+                            
+                            $anterior = $page - 1;
+                            $proximo = $page + 1;
+                        
+                            if ($page > 1) {
+                                echo " <a href='?pagina=$anterior'><- Anterior</a> ";
+                                
+                            }
+
+                            for($i = 1; $i <= ceil($tp) ; $i++ ){
+                                echo " <a href='?pagina=$i'>$i</a>";
+                            }
+                                
+                        
+                            if ($page < $tp) {
+                                echo " <a href='?pagina=$proximo'>Próxima -></a>";
+                            }
+                    ?>
         <?php }?>
 
     </main>
