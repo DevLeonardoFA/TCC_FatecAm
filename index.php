@@ -35,7 +35,6 @@
 		<div class="row map-area">
 			<div class="col-6">
 				<h2> Sobre Nós</h2>
-
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 				<button class="" data-toggle="modal" data-target="#exampleModal2">CADASTRAR</button>
 			</div>

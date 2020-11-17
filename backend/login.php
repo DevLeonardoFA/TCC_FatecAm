@@ -55,6 +55,6 @@ if ($row == 1) {
 		exit();
 }else{
 
-	echo "Não consegui entrar";
+	header('Location: ../login.php?retorn=0');
 }
 //se row for difernete... volta para pagina de login

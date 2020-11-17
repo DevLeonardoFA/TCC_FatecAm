@@ -17,7 +17,7 @@ include('includes/header.php');
             <?php include_once('includes/sidetop.php'); ?>
             
             <main class="page-contato block-main ">
-                
+                Formulário de contato para a Plataforma.
             </main>
 
         </div>

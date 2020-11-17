@@ -10,9 +10,26 @@
 
 .block-main .area_video iframe{
     height: 150px;
-
 }
 
 .block-main .area_video .jogador_info h5{
     font-size: 0.8rem;
+}
+
+
+/* Pagination */
+
+.paginacao{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.paginacao a{
+    color: #2b0087;
+    font-weight: bold;
+    padding: 0px 2px;
+    
+}
+.paginacao a.active-page{
+    color: red;
 }

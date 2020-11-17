@@ -186,3 +186,73 @@ header .header nav a:nth-child(1){
     background: #f0f0f0;
 }
 
+
+/* page-register */
+
+.page-register{
+    background: #2e2388;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page-register form{
+    width: 450px;
+    padding: 30px 30px;
+    background: white;
+    border-radius: 5px;
+}
+
+.page-register p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2e2388;
+}
+
+
+.page-register label{
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.page-register .block_register{
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.page-register .block_register a{
+    color: blue;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+.page-register input{
+    margin-bottom: 10px;
+}
+
+.page-register .error{
+    color: red;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.page-register .sucess{
+    color: green;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.formulario-cadastro .block-input{
+    padding: 0 5px;
+}
+.formulario-cadastro{
+    margin: 0px -5px;
+    display: flex;
+    flex-wrap: wrap;
+}

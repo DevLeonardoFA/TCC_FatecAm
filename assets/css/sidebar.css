@@ -7,7 +7,7 @@
 }
 
 .sidebar .config-link{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .sidebar a,li{
     color: black;
@@ -70,14 +70,6 @@ button.conf {
 .about_username {
     color: #000;
 }
-
-.form_about input,
-select,
-button {
-    width: 45%;
-    margin: 10px;
-}
-
 .form_about select {
     padding: 3px
 }
@@ -89,12 +81,57 @@ button {
 }
 
 .sidetop p{
-
     margin: 0px;
     text-align: left;
     color: #2b0087;
     font-weight: bold;
     padding: 20px;
     font-size: 0.8rem;
+}
+.sidetop form{
+    display: flex;
+    gap: 10px;
+    padding: 0px 20px 20px ;
+}
+.form_pesquisar input,select{
+    background: white;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    margin-top: 5px;
 
+}
+
+.color-principal{
+    color: #2b0087;
+}
+
+.form_pesquisar button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2b0087;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: bold;
+    margin-top: 10px ;
+    color: white;
+}
+
+.form_pesquisar button svg{
+    margin-left: 10px;
+}
+
+.menu-dropdown{
+    color: #2b0087;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.menu-dropdown svg{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 2px;
 }

@@ -8,8 +8,8 @@
 			<div class="logo"> Logo</div>
 			
 			<nav>
-				<a href="loginfront.php" data-toggle="modal" data-target="#exampleModal" >Login</a>
-				<a href="loginfront.php" data-toggle="modal" data-target="#exampleModal2"> Cadastrar</a>
+				<a href="./login.php">Login</a>
+				<a href="./signup.php"> Cadastrar</a>
 			</nav>
 		</div>
 	</div>
