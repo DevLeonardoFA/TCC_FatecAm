@@ -1,11 +1,11 @@
 <!--codigo do navbar-->
 
-<header>
+<header class="header-index">
 	<div class="container">
 
 		<div class="header">
 		
-			<div class="logo"> Logo</div>
+			<div class="logo"> <img src="./images/logo.png" alt=""></div>
 			
 			<nav>
 				<a href="./login.php">Login</a>

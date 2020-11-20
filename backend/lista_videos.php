@@ -2,7 +2,7 @@
 include('connection.php');
 
 
-$max_videos = "8";
+$max_videos = "6";
 
 if(isset($_GET['pagina'])){
     $page = $_GET['pagina'];
@@ -34,7 +34,7 @@ if(isset($_GET['pesquisa'])){
     if ($cidade != "") {
         array_push($sql, "cidade = '$cidade'");
     }
-
+    
     if ($ano_nascimento != "") {
         array_push($sql, "ano = '$ano_nascimento'");
     }
@@ -55,7 +55,7 @@ if(isset($_GET['pesquisa'])){
         }
         $ind++;
     }
-    
+
     //comando do sql
     $query = "select * from  jogadores INNER JOIN videos on jogadores.cod_jogador = videos.fk_jogador where {$parametros}";
 
@@ -76,9 +76,9 @@ if(isset($_GET['pesquisa'])){
 
 }else{
     
-    $query_todos = "select nome_completo, data_nascimento, cidade , uf , url_video from jogadores INNER JOIN videos on jogadores.cod_jogador = videos.fk_jogador";
+    $query_todos = "select * from jogadores INNER JOIN videos on jogadores.cod_jogador = videos.fk_jogador";
 
-    $query = "select nome_completo, data_nascimento, cidade , uf , url_video from jogadores INNER JOIN videos on jogadores.cod_jogador = videos.fk_jogador LIMIT $inicio_pagination, $max_videos";
+    $query = "select * from jogadores INNER JOIN videos on jogadores.cod_jogador = videos.fk_jogador LIMIT $inicio_pagination, $max_videos";
 
     $result_todos = mysqli_query($conexao, $query_todos);
     $result = mysqli_query($conexao, $query);

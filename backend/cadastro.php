@@ -13,7 +13,7 @@ include('./connection.php');
 
 
 $nome = $_GET['nome_completo'];
-$cpf = $_GET['CPF'];
+// $cpf = $_GET['CPF'];
 $cidade = $_GET['cidade'];
 $uf =  $_GET['uf'];
 $telefone = $_GET['telefone'];
@@ -22,33 +22,31 @@ $email = $_GET['email'];
 $senha = $_GET['senha'];
 $rsenha = $_GET['rsenha'];
 
+//verifica se as senhas combinam
+if($senha == $rsenha){
 
+    //cadastro dos dados
 
-    //verifica se as senhas combinam
-    if($senha == $rsenha){
+    $query_verifica = "select * from jogadores where email='{$email}' "; 
 
-        //cadastro dos dados
+    $dados_email = mysqli_query($conexao, $query_verifica);
 
-        $query_verifica = "select * from jogadores where email='{$email}' "; 
-
-        $dados_email = mysqli_query($conexao, $query_verifica);
-
-        if(!mysqli_num_rows($dados_email)){ //so entra se for 0
-            $query = "insert into jogadores (`nome_completo`, `CPF`, `cidade`, `uf`, `telefone`, `data_nascimento`, `email` ,`senha` ) values('{$nome}','{$cpf}','{$cidade}','{$uf}','{$telefone}','{$data_nascimento}','{$email}','{$senha}')";
-            $result = mysqli_query($conexao, $query);
-            //manda para página de login
-            header('Location: ./../login.php?cadastro=1');
-            echo "teste";
-        }else{
-            header('Location: ./../login.php?cadastro=2');
-        }
-
-
-        exit;
+    if(!mysqli_num_rows($dados_email)){ //so entra se for 0
+        $query = "insert into jogadores (`nome_completo`, `cidade`, `uf`, `telefone`, `data_nascimento`, `email` ,`senha` ) values('{$nome}','{$cidade}','{$uf}','{$telefone}','{$data_nascimento}','{$email}','{$senha}')";
+        $result = mysqli_query($conexao, $query);
+        //manda para página de login
+        header('Location: ./../login.php?cadastro=1');
+        echo "teste";
     }else{
-        msgfmt_format_message('erro! senhas não combinam');
-        exit;
+        header('Location: ./../login.php?cadastro=2');
     }
+
+
+    exit;
+}else{
+    msgfmt_format_message('erro! senhas não combinam');
+    exit;
+}
 
 //manda mensagem de erro
 ?>

@@ -3,6 +3,7 @@
 .sidebar{
     background: orange;
     height: 100vh;
+    max-width: 200px;
     padding: 20px;
 }
 
@@ -86,21 +87,22 @@ button.conf {
     color: #2b0087;
     font-weight: bold;
     padding: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 .sidetop form{
     display: flex;
     gap: 10px;
     padding: 0px 20px 20px ;
 }
-.form_pesquisar input,select{
+
+.form_pesquisar input,.form_pesquisar select{
     background: white;
     border-radius: 5px;
     width: 100%;
     font-size: 0.8rem;
     padding: 5px 10px;
     margin-top: 5px;
-
+    border: 1px solid #0000005c;
 }
 
 .color-principal{

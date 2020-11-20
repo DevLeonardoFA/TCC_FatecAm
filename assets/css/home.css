@@ -10,19 +10,19 @@ header {
     right: 0;
     left: 0;
     z-index: 10;
+    background: white;
 }
 
-.charge-header{
+/* .charge-header{
     background: orange;
 
-}
+} */
 
 header .header{
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0px;
+    padding: 15px 0px;
 }
 header .header .logo{
     color: white;
@@ -37,7 +37,7 @@ header .header .logo img{
 }
 
 header .header nav a{
-    color: white;
+    color: black;
     font-size: 12px;
     font-weight: bold;
     padding-left: 10px;
@@ -53,7 +53,7 @@ header .header nav a:nth-child(1){
     position: absolute;
     height: 100%;
     width: 100%;
-    background: black;
+    background: #00000085;
     opacity: 0.3;
     z-index: 0;
 }
@@ -75,21 +75,22 @@ header .header nav a:nth-child(1){
 .banner-main h2{
     color: white;
     text-transform: uppercase;
-    font-size: 3rem;
-    line-height: 4.5rem;
+    font-size: 4rem;
+    line-height: 5rem;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
 .banner-main a{
     display: inline-block;
-    color: orange;
+    border: 1px solid #00000085;
+    color: #00000085;
     padding: 12px 35px;
     width: 250px;
     text-align: center;
     border-radius: 7px;
     background: white;
-    font-size: 0.8rem;
+    font-size: 1.4rem;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s ease all;
@@ -107,10 +108,11 @@ header .header nav a:nth-child(1){
 
 
 .about-project h2{
-    color: #00000;
-    font-size: 2.5rem;
+    color: orange;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 50px;
+    
     text-transform: uppercase;
 }
 
@@ -119,11 +121,13 @@ header .header nav a:nth-child(1){
     color: #4f4e4e;
 }
 
-.about-project button{
+.about-project a{
     background: orange;
+    display: inline-block;
     padding: 10px 25px;
     color: white;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: bold;
     text-transform: uppercase;
     border-radius: 7px;
     border: none;
@@ -174,13 +178,20 @@ header .header nav a:nth-child(1){
 .about-project .block-videos{
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .about-project .block-videos .item{
     background: black;
-    width: 200px;
-    height: 150px;
+    flex: 1;
     border-radius: 7px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-project .block-videos .item iframe{
+    width: 100%;
+    height: 200px;
 }
 .background-videos{
     background: #f0f0f0;
@@ -204,6 +215,11 @@ header .header nav a:nth-child(1){
     padding: 30px 30px;
     background: white;
     border-radius: 5px;
+}
+.page-register label{
+    font-size: 0.7rem;
+    width: 100%;
+    margin-bottom: 2px;
 }
 
 .page-register p{
@@ -231,8 +247,8 @@ header .header nav a:nth-child(1){
     margin-right: 20px;
 }
 
-.page-register input{
-    margin-bottom: 10px;
+.page-register input,select{
+    margin-bottom: 3px;
 }
 
 .page-register .error{
