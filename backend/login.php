@@ -35,20 +35,8 @@ if ($row == 1) {
 		
 		$_SESSION['usuario'] = array(
 			'cod_jogador' => $dados['cod_jogador'],
-			'CPF' => $dados['CPF'],
-			'nome_completo' =>	$dados['nome_completo'],
-			'data_nascimento' =>  $data,
-			'altura' =>  $dados['altura'],
-			'cidade' =>  $dados['cidade'],
-			'posicao' =>  $dados['posicao'],
-			'cep' =>  $dados['cep'],
-			'cidade' =>  $dados['cidade'],
-			'uf' =>  $dados['uf'],
-			'telefone' =>  $dados['telefone'],
-			'celular' =>  $dados['celular'],
-			'peso' =>  $dados['peso'],
-			'email' =>  $dados['email'],
-			'img_perfil' => $dados['foto_perfil']
+			'nome_completo' => $dados['nome_completo'],
+			'tipo_usuario' => $dados['tipo_usuario']
 		);
 
 		header('Location: ../main.php');

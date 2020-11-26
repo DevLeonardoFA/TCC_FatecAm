@@ -1,12 +1,8 @@
 
-
-
 <!--codigo do sidebar-->
   <div class="block-side">
-    <figure class="userphoto">
-        <?php 
-             echo '<img src="'.$exibe['foto_perfil'].'" alt="PIU" style="width: 100%">';
-        ?>
+    <figure class="userphoto" style="background: url(<?php echo $exibe['foto_perfil'];?>) no-repeat; background-size: cover;">
+
     </figure>
 
     

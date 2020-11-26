@@ -3,19 +3,20 @@
 //conteúdo da página home
 include('backend/connection.php');
 include('backend/verificacao_logado.php');
-include('backend/dados-usuario.php');
 include('includes/header.php'); 
+
+include('backend/dados-usuario.php');
+$exibe = mysqli_fetch_assoc($dados_usuario);
 
 
 ?>  
 
-    <div class="row m-0">
-        <div class="col-2 sidebar">
-            
+<div class="block-principal">
+        <div class="sidebar">
             <?php include_once('includes/sidebar.php'); ?>
-
         </div>
-        <div class="col-10 p-0">
+
+        <div class="sidemain p-0">
             <?php include_once('includes/sidetop.php'); ?>
             <main class="pagina_configuracoes  block-main ">
 
@@ -35,7 +36,7 @@ include('includes/header.php');
                             
                             <form action="./backend/remove-video.php">
                                 <input type="hidden" name="cod_video" value="<?php echo $exibe['cod_video']; ?>">
-                                <button class="cor-red">Remover vídeo</button>
+                                <button class="cor-red btn-remove">Remover vídeo</button>
                             </form>
                                 
                         </div>
@@ -46,6 +47,9 @@ include('includes/header.php');
 
                 </div>
                 <div class="config-video mt-5">
+
+                    <h5 class="title-videos">Adicionar Vídeos</h5>
+
                     <form action="backend/update.php" method="GET">
                         <label for="">URL do video do youtube:
                             <input type="text" name="url_video" required>

@@ -18,7 +18,7 @@ if(isset($_GET['pesquisa'])){
     $cidade = $_GET['cidade'];
     $nome = $_GET['nome'];
     $estado = $_GET['uf'];
-    $ano_nascimento = $_GET['ano'];
+    $ano_nascimento = $_GET['ano_nascimento'];
     $posicao = $_GET['posicao'];
     
     $sql = array();

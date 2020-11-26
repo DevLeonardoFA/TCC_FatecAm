@@ -3,7 +3,9 @@
     //conteúdo da página home
     include('backend/verificacao_logado.php');
     include('includes/header.php'); 
-    
+
+    include('backend/dados-usuario.php');
+    $exibe = mysqli_fetch_assoc($dados_usuario);
     
 ?>  
 

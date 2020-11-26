@@ -7,7 +7,7 @@ include_once('backend/lista_videos.php');
 
         <?php if ($row > 0) { ?>
 
-            <div class="row">
+            <div class="row" style='min-height: 70vh;'>
 
 
                 <?php 
@@ -26,9 +26,7 @@ include_once('backend/lista_videos.php');
                                 <iframe class="w-100" height='300' allowfullscreen src="<?php echo $url_video.'?controls=1'; ?>" frameborder="0"></iframe>
                             </div>
                             <div class="jogador_info">
-
-                        
-                                <h5><a href="./perfil.php?usu=<?php echo $exibe['cod_jogador'];?>"> <?php echo $exibe['nome_completo'].' ('.$exibe['posicao'].')';?></a> - <?php echo $explode_age[0]; ?></h5>
+                                <h5><a href="./perfil.php?usuario=<?php echo $exibe['cod_jogador'];?>"> <?php echo $exibe['nome_completo'].' ('.$exibe['posicao'].')';?></a> - <?php echo $explode_age[0]; ?></h5>
                                 <h5><?php echo $exibe['cidade'].' - '.$exibe['uf']; ?> </h5>
                             </div>
                         </div>

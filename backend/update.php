@@ -23,8 +23,8 @@
         $cep = $_POST['cep'];
         $cidade = $_POST['cidade'];
         $estado = $_POST['uf'];
-        $telefone = $_POST['telefone'];
-        $celular = $_POST['celular'];
+        $descricao = $_POST['descricao'];
+
 
         if($_FILES['imagem']['name'] != ''){
 
@@ -46,8 +46,7 @@
                 cep = '{$cep}', 
                 cidade = '{$cidade}', 
                 uf = '{$estado}', 
-                telefone = '{$telefone}', 
-                celular = '{$celular}',
+                descricao = '{$descricao}',
                 foto_perfil = '{$caminho_arquivo}' where cod_jogador = $id";
                 
 
@@ -62,16 +61,10 @@
             posicao = '{$posicao}', 
             cep = '{$cep}', 
             cidade = '{$cidade}', 
-            uf = '{$estado}', 
-            telefone = '{$telefone}', 
-            celular = '{$celular}' where cod_jogador = $id";
+            uf = '{$estado}',
+            descricao = '{$descricao}' where cod_jogador = $id";
 
         }
-
-
-
-
-
 
         //conexão + query
         if(mysqli_query($conexao, $query)){
@@ -93,6 +86,8 @@
         }else{
             echo 'erro';
         }
+
+        header('Location: ./../meus-videos.php');
 
     }
     

@@ -91,6 +91,34 @@
     color: red;
 }
 
+/* Page CONTATO */
+
+.page-contato label{
+    width: 60%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.page-contato h4{
+    color: #2b0087;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.page-contato p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.page-contato input, .page-contato textarea{
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border: 1px solid #0000005c;
+}
+
 .title-dados{
     font-size: 1rem;
     font-weight: bold;
@@ -98,8 +126,8 @@
 }
 
 .pagina_configuracoes .config-dados .foto-perfil{
-    width: 120px;
-    height: 121px;
+    width: 155px;
+    height: 155px;
     background-size: cover!important;
     margin-bottom: 10px;
     position: relative;
@@ -145,10 +173,24 @@
     margin-top: 5px;
     border: 1px solid #0000005c;
 }
-.pagina_configuracoes .config-dados form label{
+.pagina_configuracoes .config-dados form .block-fotos label{
+    width: 100%;
     font-size: 0.8rem;
     font-weight: bold;
-    width: 24%;
+    margin-bottom: 0px;
+}
+.pagina_configuracoes .config-dados form .block-fotos textarea, .block-fotos input{
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border: 1px solid #0000005c;
+}
+.pagina_configuracoes .config-dados form .block-campos label{
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 32%;
     margin-bottom: 0px;
 }
 
@@ -161,9 +203,60 @@
     margin-top: 10px;
     color: white;
 }
+.block-senha button{
+    background: #2b0087;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+
+.block-senha{
+    margin-top: 20px;
+}
+
+.block-senha label{
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 24%;
+    margin-bottom: 0px;
+}
+
+.block-senha input{
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border: 1px solid #0000005c;
+}
 
 .config-video{
     margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #2b0087;
+}
+.config-video h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2b0087;
+
+}
+
+.config-video input{
+    height: 32px;
+    width: 388px; 
+}
+.config-video button{
+    background: #2b0087;
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .block-principal{
@@ -269,14 +362,24 @@ button{
     gap: 10px 20px;
 
 }
+.meus-videos .btn-remove, .btn-adiciona{
+    background: #2b0087;
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 .meus-videos .item{
     width: 32%;
 }
 .meus-videos iframe{
     width: 100%;
-    height: 180px;
+    height: 28vh;
 }
 .title-videos{
     color: #2b0087;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
 }

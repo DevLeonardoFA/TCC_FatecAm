@@ -1,11 +1,11 @@
 <?php 
     //conteúdo da página home
     include('backend/verificacao_logado.php');
-    include('backend/single-usuario.php');
     include('backend/admin.php');
-
     include('includes/header.php'); 
-    
+
+    include('backend/dados-usuario.php');
+    $exibe = mysqli_fetch_assoc($dados_usuario);    
 ?>  
 
 <div class="block-principal">
@@ -21,7 +21,5 @@
         
     </div>
 </div>
-
-
 
 <?php include('includes/footer.php'); ?>

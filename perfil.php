@@ -4,6 +4,8 @@
     include('includes/header.php'); 
 
     include('backend/single-usuario.php');
+    include('backend/dados-usuario.php');
+    $exibe = mysqli_fetch_assoc($dados_usuario);
     
 ?>  
 

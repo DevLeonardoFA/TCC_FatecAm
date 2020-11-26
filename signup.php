@@ -12,11 +12,11 @@
                 <p>Faça seu cadastro:</p>
 
                 <div class="form-group formulario-cadastro">
-                    <div class="col-12 block-input">
+                    <div class="col-6 block-input">
                         <label for="">Nome completo:</label>
                          <input class="form-control" type="text" name="nome_completo" id="" placeholder="Nome Completo">
                     </div>  
-                    <div class="col-12 block-input"> 
+                    <div class="col-6 block-input"> 
                         <label for="">E-mail:</label>
                         <input class="form-control" type="email" name="email" id="" placeholder="Email"></div>
                     
@@ -34,11 +34,7 @@
                         </select>
                     </div>
                     
-                    <div class="col-6 block-input">
-                        <label for="">Telefone:</label>
-                        <input class="form-control" type="text" name="telefone" placeholder="Telefone fixo">
-                    </div>
-                    <div class="col-6 block-input">
+                    <div class="col-12 block-input">
                         <label for="">Data de Nascimento:</label>
                         <input class="form-control" type="date" name="data_nascimento" > </div>
 

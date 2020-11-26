@@ -79,6 +79,9 @@ button.conf {
 /* SideBar Top */
 .sidetop{
     background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .sidetop p{
@@ -86,8 +89,21 @@ button.conf {
     text-align: left;
     color: #2b0087;
     font-weight: bold;
-    padding: 20px;
     font-size: 1rem;
+}
+
+.sidetop .painel img{
+    margin-right: 5px;
+}
+.sidetop .painel a{
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.sidetop .painel a{
+    color: black;
 }
 .sidetop form{
     display: flex;
