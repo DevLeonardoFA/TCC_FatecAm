@@ -19,16 +19,16 @@
 
 		<div class="block-videos">
 			<div class="item">
-				<iframe width="100%" height="150" src="https://www.youtube.com/embed/p5ROBYUMQdU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/rdlRO_lHykk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<div class="item">
-				<iframe width="100%" height="150" src="https://www.youtube.com/embed/p5ROBYUMQdU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/xSdR7-8hBEU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<div class="item">
-				<iframe width="100%" height="150px" src="https://www.youtube.com/embed/p5ROBYUMQdU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/TL0n7GBaASs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<div class="item">
-				<iframe width="100%" height="150" src="https://www.youtube.com/embed/p5ROBYUMQdU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/_dBz4dTZocg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -42,7 +42,8 @@
 		<div class="row map-area">
 			<div class="col-6">
 				<h2> Sobre Nós</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+				<p>A plataforma facilita a localização de atletas por meio de uma busca por meio de sua cidade ou região, contando também com avaliações que ajudam no sistema de ranqueamento de atletas.
+				   Se tiverem boas notas terá um destaque maior, se tiverem notas ruins, terão um destaque menor, com isso esperamos que muitos jogadores possam ter uma oportunidade para entrar em clubes, e então faça com que os mesmos melhorem suas habilidades, e consequentemente melhorem assim o nível atual do futebol.</p>
 				<a class="" href="./signup.php">CADASTRAR</a>
 			</div>
 			<div class="col-6">

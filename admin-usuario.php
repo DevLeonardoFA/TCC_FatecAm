@@ -10,7 +10,6 @@ include('backend/dados-usuario.php');
 //definindo numero de itens visiveis na tela
 $itens_por_pagina = 1;
 
-$data = implode("-",array_reverse(explode("/",$_SESSION['usuario']['data_nascimento'])));
 $exibe = mysqli_fetch_assoc($dados_usuario);
 
 
@@ -22,13 +21,13 @@ if(isset($_GET['usuario'])){
 
 ?>
 
-    <div class="row m-0">
-        <div class="col-2 sidebar">
+    <div class="block-principal">
+        <div class="sidebar">
             
             <?php include_once('includes/sidebar.php'); ?>
 
         </div>
-        <div class="col-10 p-0">
+        <div class="sidemain p-0">
             <?php include_once('includes/sidetop.php'); ?>
             <main class="pagina_configuracoes  block-main bloco-perfil">
                 
@@ -45,7 +44,7 @@ if(isset($_GET['usuario'])){
 
                 <div class="meus-videos ">
                     <?php 
-                        while( $exibe = mysqli_fetch_assoc($videos_usuario) ) { 
+                        while( $exibe = mysqli_fetch_assoc( $videos_usuario_admin) ) { 
                             
                             $url_video = str_replace('watch?v=' , 'embed/' , $exibe['url_video']);
                             ?>
@@ -56,6 +55,7 @@ if(isset($_GET['usuario'])){
                                 </div>
                                 
                                 <form action="./backend/remove-video.php">
+                                    <input type="hidden" name="admin" value="<?php echo $_GET['usuario']; ?>">
                                     <input type="hidden" name="cod_video" value="<?php echo $exibe['cod_video']; ?>">
                                     <button class="cor-red btn-remove">Remover vídeo</button>
                                 </form>

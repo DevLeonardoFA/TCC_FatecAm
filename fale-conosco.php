@@ -23,19 +23,20 @@ $exibe = mysqli_fetch_assoc($dados_usuario);
                 
                 <h4>Envie seu Reporte:</h4>
 
-                <p>Envie para nós uma mensagem sobre alguma dúvida, critica, sugestões e melhorias.</p>
+                <p>Envie para nós alguma dúvidas, críticas, sugestões eou melhorias a serem feitas.</p>
                 <form action="" class="form-report">
 
                     <label for="">
                             Assunto: <br />
-                        <input type="Assunto" name="email" id="" placeholder="Email" required>
+                        <input type="Assunto" name="email" id="" required>
                     </label>
                     <label  for="" style="margin-top: 10px">
                         Texto: <br />
                         <textarea name="descricao" id="" rows="3" >    
                         </textarea>
                     </label>
-
+                    <br />
+                    <button type="submit" class="btn-blue d-inline-block">enviar</button>
                 </form>
             
             </main>

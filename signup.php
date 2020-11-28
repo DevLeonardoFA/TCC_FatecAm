@@ -44,7 +44,11 @@
                     <div class="col-6 block-input">
                         <label for="">Confirmar Senha:</label>
                         <input class="form-control" type="password" name="rsenha" placeholder="Confirmação de Senha"></div>
-                       
+                    
+                    <div class="col-12 block-input">
+                        <input type="checkbox"> Li e concordo com os <span><a href="">Termo de uso</a></span> </div>
+                    
+                    
                 </div>
 
                 <div class="block_register" >

@@ -31,7 +31,7 @@
                     <input type="text" name="posicao" placeholder="Posição"> -->
                   
                     <select name="uf" id="uf" >
-                        <option value="">Estados</option>
+                        <option value="">Estado</option>
                     </select>
         
                     <select name="cidade" id="cidade">
@@ -45,6 +45,10 @@
                     <select name="posicao" >
                         <option value="">Posição</option>
                     </select>
+                    <select name="posicao" >
+                        <option value="">Mais Recentes</option>
+                    </select>
+
 
                     <button type="submit">Procurar <?php echo '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 23" fill="none">
 <path d="M10.2055 0.00225067C4.93028 0.00225067 0.612549 4.28376 0.612549 9.53071C0.612549 14.7777 4.93028 19.0723 10.2055 19.0723C12.2338 19.0723 14.1117 18.4269 15.66 17.3539L20.8455 22.5012C21.5049 23.1675 22.5837 23.1675 23.2431 22.5012C23.9025 21.8453 23.9025 20.7828 23.2431 20.1269L18.0602 14.9665C19.1495 13.4161 19.7878 11.5482 19.7878 9.53071C19.7878 4.28376 15.4701 0.00225067 10.2055 0.00225067ZM10.2055 3.3603C13.6422 3.3603 16.4012 6.10445 16.4012 9.53071C16.4012 12.957 13.6422 15.7037 10.2055 15.7037C6.75813 15.7037 4.00185 12.9596 4.00185 9.53333C4.00185 6.10445 6.75813 3.3603 10.2055 3.3603Z" fill="white"/>

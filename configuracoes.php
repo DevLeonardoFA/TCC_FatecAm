@@ -32,6 +32,7 @@ $exibe = mysqli_fetch_assoc($dados_usuario);
                 <div class="config-dados">
                     <form action="backend/update.php" method="POST" enctype="multipart/form-data">
 
+                        
 
                         <div class="row no-gutters block-fotos">
                             <div class="foto-perfil" style="background: url(<?php echo $exibe['foto_perfil']; ?>)no-repeat; backgroud-size: cover; flex: 1;">
@@ -45,8 +46,9 @@ $exibe = mysqli_fetch_assoc($dados_usuario);
                                 </label>
                                 <label  for="" style="margin-top: 10px">
                                     Conte sobre você: <br />
-                                    <textarea name="descricao" id="" rows="3" >
-                                        <?php echo $exibe['descricao']; ?>
+                                    <textarea name="descricao" id="text-area" 
+                                    rows="3" cols="33" >
+                                        Kaká foi convocado para o Championship Youth World de 2001, mas sua equipe foi eliminada pela Gana nas quartas de final. Vários meses depois, ele fez sua estreia na equipe sênior do Brasil, em um amistoso contra a Bolívia, em 31 de janeiro de 2002.          
                                     </textarea>
                                 </label>
                             </div>
@@ -60,7 +62,7 @@ $exibe = mysqli_fetch_assoc($dados_usuario);
                             <input type="text" name="nome_completo" id="" placeholder="Nome Completo" value="<?php echo $exibe['nome_completo']; ?>" required></label>
                             <label for="">
                             Data de nascimento: <br />
-                            <input type="date" name="data_nascimento" value="<?php echo $data ?>" required>  </label>
+                            <input type="date" name="data_nascimento" value="<?php echo $exibe['data_nascimento']; ?>" required>  </label>
                             <label for="">
                             CPF: <br />
                             <input type="number" name="CPF" id=""  value="<?php echo $exibe['CPF']; ?>" required></label>

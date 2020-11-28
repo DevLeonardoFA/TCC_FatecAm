@@ -61,13 +61,7 @@
                             echo "<td><a href='admin-usuario.php?usuario=".$exibe['cod_jogador']."'><img style='height:20px; width: 20px; margin-left: 20px' src='./assets/images/settings.png'></a></td>"; 
                             echo "<td><button class='btn-verde' data='".$exibe['cod_jogador']."'>Ativar</button></td>"; 
                         
-                        } ?>
-
-
-
-                        
-
-                        
+                        } ?>  
                     </tr> 
 
                 <?php } ?>

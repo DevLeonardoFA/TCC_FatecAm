@@ -4,9 +4,8 @@
     <div class="painel"> 
         <?php 
         if($_SESSION['usuario']['tipo_usuario'] == 1){ ?>
-           
+           <!-- <a href="./reports.php">Forms Recebidos </a> <span class="separador">|</span> -->
            <a href="./admin.php"> <span>Admin</span><img style='height:20px; width: 20px; margin-left: 5px' src='./assets/images/settings.png'></a>
-        
         <?php }
         ?>
     </div>

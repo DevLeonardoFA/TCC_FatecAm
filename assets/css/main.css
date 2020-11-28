@@ -157,6 +157,16 @@
     cursor: pointer;
 }
 
+.btn-blue{
+    background: #2b0087;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+
 .pagina_configuracoes .config-dados form .block-campos{
     display: flex;
     flex-wrap: wrap;

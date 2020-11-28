@@ -9,6 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/customcss.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/sidebar.css">
+
+	<link rel="shortcut icon" href="./images/favicon.png" />
+	
 	
 	
 	<title>Soccer</title>

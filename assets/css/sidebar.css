@@ -91,7 +91,12 @@ button.conf {
     font-weight: bold;
     font-size: 1rem;
 }
-
+.sidetop .painel span.separador{
+    margin: 0px 10px;
+}
+.sidetop .painel{
+    display: flex;
+}
 .sidetop .painel img{
     margin-right: 5px;
 }

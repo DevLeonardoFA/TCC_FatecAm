@@ -7,6 +7,7 @@
 	<!--importação dos styles-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/home.css">
+	<link rel="shortcut icon" href="./images/favicon.png" />
     
     <title>Soccer</title>
 
